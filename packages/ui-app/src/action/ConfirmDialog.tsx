@@ -28,7 +28,7 @@ export function ConfirmDialog(props: {
         </DialogHeader>
         <DialogFooter>
           <Button variant="outline" onClick={() => props.onOpenChange(false)}>
-            Cancel
+            Go back
           </Button>
           <Button
             variant={props.destructive ? "destructive" : "default"}
