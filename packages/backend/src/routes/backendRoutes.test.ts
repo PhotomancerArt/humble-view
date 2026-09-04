@@ -1,4 +1,5 @@
-import { expect, provideFakeClock, Providers, test } from "@humble/ux-core";
+import { provideFakeClock, Providers } from "@humble/ux-core";
+import { expect, test } from "@humble/ux-core/test";
 
 import type { Order } from "../domain/Order";
 import { provideAdmin, provideBackend, provideOrders, provideShipments } from "../testing";

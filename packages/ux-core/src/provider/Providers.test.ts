@@ -1,7 +1,7 @@
 import { describe, expect } from "vitest";
 
 import { disposeCtx, Providers } from "./Providers";
-import { test } from "./test";
+import { test } from "../test";
 
 function provideConfig() {
   return { config: { greeting: "Hello" } };

@@ -5,7 +5,8 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./react": "./src/react/index.ts"
+    "./react": "./src/react/index.ts",
+    "./test": "./src/test/index.ts"
   },
   "scripts": {
     "lint": "eslint .",

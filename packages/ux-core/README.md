@@ -3,7 +3,7 @@
 The pattern, with no Dispatch in it. Every other package builds on this one; it depends on nothing
 in the workspace.
 
-- **`Providers` and `test()`** (`provider/`) — vendored from
+- **`Providers`** (`provider/`) and **`test()`** (`/ux-core/test`) — vendored from
   [ts-provide](https://github.com/PhotomancerArt/ts-provide) and the
   [providers post](https://lab.photomancer.art/post/2026-08-04-providers/). A provider is
   `(ctx) => moreCtx`; `Providers(a, b, c)` folds a typed chain into `() => Promise<ctx>`, and the

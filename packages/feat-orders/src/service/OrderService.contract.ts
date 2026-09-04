@@ -1,6 +1,7 @@
 import type { Backend } from "@humble/backend";
 import { TestOrder } from "@humble/backend/testing";
-import { type Chain, describe, expect, test } from "@humble/ux-core";
+import { type Chain } from "@humble/ux-core";
+import { describe, expect, test } from "@humble/ux-core/test";
 
 import type { OrderService } from "./OrderService";
 

@@ -10,7 +10,6 @@ export {
   type ProviderFn,
   Providers,
 } from "./provider/Providers";
-export { test } from "./provider/test";
 export { UxStore } from "./ux/UxStore";
 export { type DispatchResult, type Ux } from "./ux/Ux";
 export {
@@ -26,4 +25,3 @@ export { EventBus } from "./events/EventBus";
 export { type Clock, SystemClock } from "./clock/Clock";
 export { FakeClock } from "./clock/FakeClock";
 export { provideClock, provideFakeClock } from "./clock/provideClock";
-export { describe, expect } from "vitest";

@@ -1,4 +1,5 @@
-import { type Chain, describe, expect, test } from "@humble/ux-core";
+import { type Chain } from "@humble/ux-core";
+import { describe, expect, test } from "@humble/ux-core/test";
 
 import type { AuthService } from "./AuthService";
 

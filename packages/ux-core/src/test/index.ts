@@ -1,6 +1,11 @@
 import { test as vitestTest } from "vitest";
 
-import { type AnyProvider, disposeCtx, type MaybePromise, type ProvidedCtx } from "./Providers";
+import {
+  type AnyProvider,
+  disposeCtx,
+  type MaybePromise,
+  type ProvidedCtx,
+} from "../provider/Providers";
 
 /**
  * `test(name, fn)` is vitest's test. `test(name, world, fn)` builds the world — a provider chain —
@@ -31,3 +36,5 @@ export function test(
     }
   });
 }
+
+export { describe, expect } from "vitest";
