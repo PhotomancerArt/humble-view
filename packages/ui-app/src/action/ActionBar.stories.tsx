@@ -12,7 +12,7 @@ const meta = {
   component: ActionBar<Op>,
   args: {
     onDispatch: fn(),
-    testIdPrefix: "orders-1042",
+    testIdFor: (op: Op) => `orders-${op.kind}-1042`,
     actions: [
       {
         op: { kind: "cancel" },

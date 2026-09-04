@@ -1,7 +1,7 @@
 import { expect, provideFakeClock, Providers, test } from "@humble/ux-core";
 
 import type { Order } from "../domain/Order";
-import { provideAdmin, provideFakeBackend, provideOrders, provideShipments } from "../testing";
+import { provideAdmin, provideBackend, provideOrders, provideShipments } from "../testing";
 import { backendRoutes } from "./backendRoutes";
 
 function provideRoutes({ backend }: { backend: Parameters<typeof backendRoutes>[0] }) {
@@ -10,7 +10,7 @@ function provideRoutes({ backend }: { backend: Parameters<typeof backendRoutes>[
 
 const world = Providers(
   provideFakeClock,
-  provideFakeBackend(),
+  provideBackend(),
   provideAdmin,
   provideOrders([{ customer: "Radia", status: "pending" }, { status: "delivered" }]),
   provideShipments([{ status: "in_transit" }]),

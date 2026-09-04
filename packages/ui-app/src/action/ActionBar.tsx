@@ -2,11 +2,11 @@ import type { Action } from "@humble/ux-core";
 
 import { ActionButton } from "./ActionButton";
 
-/** A row of ActionButtons. Test ids are `<prefix>-<op.kind>`. */
+/** A row of ActionButtons. `testIdFor(op)` names each button for play tests. */
 export function ActionBar<Op extends { kind: string }>(props: {
   actions: Action<Op>[];
   onDispatch: (op: Op) => void | Promise<unknown>;
-  testIdPrefix?: string | undefined;
+  testIdFor?: ((op: Op) => string) | undefined;
   size?: "sm" | "md" | undefined;
 }) {
   return (
@@ -17,7 +17,7 @@ export function ActionBar<Op extends { kind: string }>(props: {
           action={action}
           onDispatch={props.onDispatch}
           size={props.size ?? "sm"}
-          testId={props.testIdPrefix ? `${props.testIdPrefix}-${action.op.kind}` : undefined}
+          testId={props.testIdFor?.(action.op)}
         />
       ))}
     </div>

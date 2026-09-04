@@ -15,3 +15,4 @@ export {
 } from "./http/HttpClient";
 export { provideInProcessHttp } from "./http/provideInProcessHttp";
 export { provideClock, provideFakeClock } from "@humble/ux-core";
+export type { ServiceResult } from "./ServiceResult";

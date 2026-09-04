@@ -6,8 +6,8 @@ import { type ShipmentSpec, TestShipment } from "./TestShipment";
 
 export type BackendCtx = { backend: Backend };
 
-/** A fresh simulated backend on the world's clock. Worlds start with `provideFakeClock`. */
-export function provideFakeBackend(opts: Omit<BackendOptions, "clock"> = {}) {
+/** A fresh simulated backend on the world's clock. `app-core/testing` wraps this as `provideFakeBackend`. */
+export function provideBackend(opts: Omit<BackendOptions, "clock"> = {}) {
   return ({ clock }: { clock: Clock }): BackendCtx => ({ backend: Backend({ clock, ...opts }) });
 }
 

@@ -3,13 +3,13 @@ import { expect, provideFakeClock, Providers, test } from "@humble/ux-core";
 import {
   provideAdmin,
   provideAgent,
-  provideFakeBackend,
+  provideBackend,
   provideOrders,
   provideShipments,
 } from "./testing";
 
-const asAgent = Providers(provideFakeClock, provideFakeBackend(), provideAgent);
-const asAdmin = Providers(provideFakeClock, provideFakeBackend(), provideAdmin);
+const asAgent = Providers(provideFakeClock, provideBackend(), provideAgent);
+const asAdmin = Providers(provideFakeClock, provideBackend(), provideAdmin);
 
 test(
   "a pending order can be cancelled",
@@ -79,11 +79,7 @@ test(
 
 test(
   "dispatch waits for the carrier on the injected clock",
-  Providers(
-    provideFakeClock,
-    provideFakeBackend({ carrierLatencyMs: 500 }),
-    provideShipments([{}]),
-  ),
+  Providers(provideFakeClock, provideBackend({ carrierLatencyMs: 500 }), provideShipments([{}])),
   async ({ backend, clock, shipments: [shipment] }) => {
     const dispatching = backend.shipments.dispatch(shipment!.id);
     await clock.settle();
@@ -99,7 +95,7 @@ test(
   "a refusing carrier fails the shipment, which can be retried",
   Providers(
     provideFakeClock,
-    provideFakeBackend({ carrier: { fail: (s) => s.updatedAt === 0 } }),
+    provideBackend({ carrier: { fail: (s) => s.updatedAt === 0 } }),
     provideShipments([{}]),
   ),
   async ({ backend, clock, shipments: [shipment] }) => {
