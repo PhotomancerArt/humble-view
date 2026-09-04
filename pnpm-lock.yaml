@@ -381,13 +381,31 @@ importers:
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core
+      lucide-react:
+        specifier: 'catalog:'
+        version: 1.41.0(react@19.2.8)
     devDependencies:
+      '@storybook/react-vite':
+        specifier: 'catalog:'
+        version: 10.6.0(@types/react-dom@19.2.7(@types/react@19.2.18))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(storybook@10.6.0(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8))(typescript@5.9.3)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.2)(jiti@2.7.0))
+      '@types/react':
+        specifier: 'catalog:'
+        version: 19.2.18
+      '@types/react-dom':
+        specifier: 'catalog:'
+        version: 19.2.7(@types/react@19.2.18)
+      react:
+        specifier: 'catalog:'
+        version: 19.2.8
+      react-dom:
+        specifier: 'catalog:'
+        version: 19.2.8(react@19.2.8)
+      storybook:
+        specifier: 'catalog:'
+        version: 10.6.0(@types/react@19.2.18)(prettier@3.9.6)(react@19.2.8)
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
-      vitest:
-        specifier: 'catalog:'
-        version: 4.1.11(@types/node@26.4.1)(@vitest/browser-playwright@4.1.11)(jsdom@30.0.1)(vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.2)(jiti@2.7.0))
 
   packages/ui-core:
     dependencies:
