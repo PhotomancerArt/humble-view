@@ -25,3 +25,5 @@ export { type Action } from "./ux/Action";
 export { EventBus } from "./events/EventBus";
 export { type Clock, SystemClock } from "./clock/Clock";
 export { FakeClock } from "./clock/FakeClock";
+export { provideClock, provideFakeClock } from "./clock/provideClock";
+export { describe, expect } from "vitest";

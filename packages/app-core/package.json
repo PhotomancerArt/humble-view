@@ -12,6 +12,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@humble/backend": "workspace:*",
     "@humble/ux-core": "workspace:*"
   },
   "devDependencies": {

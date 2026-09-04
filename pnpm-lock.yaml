@@ -72,6 +72,9 @@ catalogs:
     globals:
       specifier: 17.12.0
       version: 17.12.0
+    hono:
+      specifier: 4.13.7
+      version: 4.13.7
     jsdom:
       specifier: 30.0.1
       version: 30.0.1
@@ -296,6 +299,9 @@ importers:
 
   packages/app-core:
     dependencies:
+      '@humble/backend':
+        specifier: workspace:*
+        version: link:../backend
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core
@@ -312,6 +318,9 @@ importers:
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core
+      hono:
+        specifier: 'catalog:'
+        version: 4.13.7
     devDependencies:
       typescript:
         specifier: 'catalog:'
@@ -2709,6 +2718,10 @@ packages:
 
   hermes-parser@0.25.1:
     resolution: {integrity: sha512-6pEjquH3rqaI6cYAXYPcz9MS4rY6R4ngRgrgfDshRptUZIc3lw0MCIJIGDj9++mfySOuPTHB4nrSW99BCvOPIA==}
+
+  hono@4.13.7:
+    resolution: {integrity: sha512-c8/gF9ac8Y78/agExVocyLevgR+JlpNB444Py0FSX8pJoPdYUfUzRcXtYEYGwt6l19qIlVZPN5Mfsw9jFShmQQ==}
+    engines: {node: '>=16.9.0'}
 
   hookified@1.15.1:
     resolution: {integrity: sha512-MvG/clsADq1GPM2KGo2nyfaWVyn9naPiXrqIe4jYjXNZQt238kWyOGrsyc/DmRAQ+Re6yeo6yX/yoNCG5KAEVg==}
@@ -5745,6 +5758,8 @@ snapshots:
   hermes-parser@0.25.1:
     dependencies:
       hermes-estree: 0.25.1
+
+  hono@4.13.7: {}
 
   hookified@1.15.1: {}
 
