@@ -1,6 +1,5 @@
 export type { AppContext } from "./AppContext";
 export type { AuthService } from "./auth/AuthService";
-export { describeAuthService } from "./auth/AuthService.contract";
 export { FakeAuthService } from "./auth/FakeAuthService";
 export { HttpAuthService } from "./auth/HttpAuthService";
 export { type AuthCtx, provideAuth, provideFakeAuth } from "./auth/provideAuth";

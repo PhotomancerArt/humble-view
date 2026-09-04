@@ -1,7 +1,6 @@
 export { FakeOrderService } from "./service/FakeOrderService";
 export { HttpOrderService } from "./service/HttpOrderService";
 export type { OrderMethod, OrderService } from "./service/OrderService";
-export { describeOrderService } from "./service/OrderService.contract";
 export {
   type OrderServiceCtx,
   provideFakeOrderService,
