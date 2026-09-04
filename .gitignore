@@ -1,0 +1,9 @@
+node_modules
+dist
+storybook-static
+site
+.turbo
+coverage
+test-results
+*.log
+.DS_Store

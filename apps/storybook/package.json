@@ -1,0 +1,24 @@
+{
+  "name": "@humble/storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p .",
+    "test:storybook": "echo skip"
+  },
+  "dependencies": {
+    "@humble/feat-orders": "workspace:*",
+    "@humble/feat-shipments": "workspace:*",
+    "@humble/ui-app": "workspace:*",
+    "@humble/ui-core": "workspace:*",
+    "@humble/ui-design": "workspace:*",
+    "@humble/app-core": "workspace:*",
+    "@humble/backend": "workspace:*",
+    "@humble/ux-core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

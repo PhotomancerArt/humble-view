@@ -1,0 +1,30 @@
+{
+  "name": "humble-view",
+  "private": true,
+  "type": "module",
+  "description": "Dispatch: a three-layer frontend architecture demo (Service / Ux / View) with Ux tests and stories on shared fakes",
+  "license": "MIT",
+  "packageManager": "pnpm@10.22.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "turbo run format:check lint typecheck test build test:storybook",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "fix": "prettier --write . && eslint --fix ."
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-storybook": "catalog:",
+    "globals": "catalog:",
+    "prettier": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "vitest": "catalog:"
+  }
+}

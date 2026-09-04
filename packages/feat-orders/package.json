@@ -1,0 +1,24 @@
+{
+  "name": "@humble/feat-orders",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@humble/ui-app": "workspace:*",
+    "@humble/app-core": "workspace:*",
+    "@humble/backend": "workspace:*",
+    "@humble/ux-core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
