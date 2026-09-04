@@ -16,5 +16,5 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      # Playwright browsers for the Storybook play tests are installed here from P3 onward.
+      - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm validate

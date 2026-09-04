@@ -4,15 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./theme.css": "./src/theme.css"
   },
   "scripts": {
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit -p .",
-    "test": "vitest run"
+    "typecheck": "tsc --noEmit -p ."
   },
   "devDependencies": {
-    "typescript": "catalog:",
-    "vitest": "catalog:"
+    "@storybook/react-vite": "catalog:",
+    "@types/react": "catalog:",
+    "react": "catalog:",
+    "storybook": "catalog:",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "tailwindcss": "catalog:",
+    "tw-animate-css": "catalog:"
   }
 }
