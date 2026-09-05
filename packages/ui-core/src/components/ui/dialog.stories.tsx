@@ -55,7 +55,7 @@ export const TestOpensAndCloses: Story = {
     await userEvent.click(canvas.getByRole("button", { name: "Open dialog" }));
 
     const dialog = await screen.findByRole("dialog");
-    await expect(dialog).toBeVisible();
+    await waitFor(() => expect(dialog).toBeVisible());
     await expect(within(dialog).getByText("Cancel order #1042?")).toBeVisible();
 
     await userEvent.click(within(dialog).getByRole("button", { name: "Keep order" }));
