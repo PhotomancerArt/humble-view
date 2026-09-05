@@ -1,1 +1,1 @@
-export const packageName = "@humble/ui-design";
+export { type ColorToken, colorTokens, radiusTokens, typeScale } from "./tokens";

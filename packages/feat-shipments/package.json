@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./testing": "./src/testing/index.ts"
   },
   "scripts": {
     "lint": "eslint .",
@@ -12,13 +13,24 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@humble/ui-app": "workspace:*",
     "@humble/app-core": "workspace:*",
     "@humble/backend": "workspace:*",
+    "@humble/ui-app": "workspace:*",
+    "@humble/ui-core": "workspace:*",
     "@humble/ux-core": "workspace:*"
   },
   "devDependencies": {
+    "@storybook/react-vite": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "storybook": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
