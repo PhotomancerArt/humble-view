@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 
+import { ResponsivePreview } from "@humble/ui-core";
+
 import { sampleStates } from "../testing/sampleStates";
 import { OrdersView } from "./OrdersView";
 
@@ -24,3 +26,12 @@ export const ReadyAsAgent: Story = {
 export const InFlight: Story = { name: "Cancel in flight", args: { state: sampleStates.inFlight } };
 export const ErrorNotice: Story = { args: { state: sampleStates.withErrorNotice } };
 export const LoadFailed: Story = { args: { state: sampleStates.loadFailed } };
+
+export const Responsive: Story = {
+  name: "Responsive (sm · md · lg)",
+  render: (args) => (
+    <ResponsivePreview breakpoints={["sm", "md", "lg"]}>
+      <OrdersView {...args} />
+    </ResponsivePreview>
+  ),
+};

@@ -6,3 +6,8 @@ export * from "./components/ui/sonner";
 export * from "./components/ui/table";
 export * from "./components/ui/tooltip";
 export { cn } from "./lib/cn";
+export {
+  type Breakpoint,
+  defaultBreakpoints,
+  ResponsivePreview,
+} from "./preview/ResponsivePreview";

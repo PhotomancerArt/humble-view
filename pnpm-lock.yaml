@@ -340,6 +340,9 @@ importers:
       '@humble/ui-app':
         specifier: workspace:*
         version: link:../ui-app
+      '@humble/ui-core':
+        specifier: workspace:*
+        version: link:../ui-core
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core

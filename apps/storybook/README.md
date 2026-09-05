@@ -11,4 +11,6 @@ pnpm exec playwright install chromium           # once, before test:storybook
 ```
 
 Story titles follow the layer: `design/…`, `core/…`, `app/…`, `orders/…`, `shipments/…`,
-`dispatch/…`. Play-test stories are named `Test: …`. The theme toolbar toggles the `dark` class.
+`dispatch/…`. Play-test stories are named `Test: …`. The theme toolbar toggles the `dark` class; the
+"Preview" toolbar renders any story at sm / md / lg in light and dark at once (`ResponsivePreview`
+from `ui-core`, which stories can also use directly).

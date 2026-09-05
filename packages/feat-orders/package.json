@@ -16,6 +16,7 @@
     "@humble/app-core": "workspace:*",
     "@humble/backend": "workspace:*",
     "@humble/ui-app": "workspace:*",
+    "@humble/ui-core": "workspace:*",
     "@humble/ux-core": "workspace:*"
   },
   "devDependencies": {
