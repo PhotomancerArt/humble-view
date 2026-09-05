@@ -18,3 +18,4 @@ export {
   provideOrders,
   provideShipments,
 } from "./worlds";
+export { demoOrders, demoShipments, seedDemo } from "./demo";

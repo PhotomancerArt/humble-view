@@ -4,15 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit -p ."
   },
   "dependencies": {
+    "@hono/node-server": "catalog:",
     "@humble/backend": "workspace:*",
-    "@humble/app-core": "workspace:*",
-    "@humble/ux-core": "workspace:*"
+    "@humble/ux-core": "workspace:*",
+    "hono": "catalog:"
   },
   "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:"
   }
 }

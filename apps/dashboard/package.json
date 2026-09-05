@@ -3,21 +3,42 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    "./App": "./src/App.tsx",
+    "./provideDispatchApp": "./src/provideDispatchApp.ts"
+  },
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit -p ."
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run"
   },
   "dependencies": {
+    "@humble/app-core": "workspace:*",
+    "@humble/backend": "workspace:*",
     "@humble/feat-orders": "workspace:*",
     "@humble/feat-shipments": "workspace:*",
     "@humble/ui-app": "workspace:*",
     "@humble/ui-core": "workspace:*",
     "@humble/ui-design": "workspace:*",
-    "@humble/app-core": "workspace:*",
-    "@humble/backend": "workspace:*",
-    "@humble/ux-core": "workspace:*"
+    "@humble/ux-core": "workspace:*",
+    "lucide-react": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
-    "typescript": "catalog:"
+    "@tailwindcss/vite": "catalog:",
+    "@testing-library/dom": "catalog:",
+    "@testing-library/react": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "jsdom": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
   }
 }

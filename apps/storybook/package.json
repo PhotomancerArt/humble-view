@@ -13,6 +13,7 @@
   "dependencies": {
     "@humble/app-core": "workspace:*",
     "@humble/backend": "workspace:*",
+    "@humble/dashboard": "workspace:*",
     "@humble/feat-orders": "workspace:*",
     "@humble/feat-shipments": "workspace:*",
     "@humble/ui-app": "workspace:*",
