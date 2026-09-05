@@ -9,10 +9,11 @@
     "node": ">=22"
   },
   "scripts": {
-    "validate": "turbo run format:check lint typecheck test build test:storybook",
+    "validate": "turbo run format:check check:deps lint typecheck test build test:storybook",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "fix": "prettier --write . && eslint --fix ."
+    "fix": "prettier --write . && eslint --fix .",
+    "check:deps": "node scripts/check-deps.mjs"
   },
   "devDependencies": {
     "@eslint/js": "catalog:",

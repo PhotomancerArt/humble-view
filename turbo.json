@@ -13,6 +13,17 @@
       "cache": false,
       "persistent": true
     },
-    "//#format:check": {}
+    "//#format:check": {},
+    "//#check:deps": {
+      "inputs": [
+        "scripts/check-deps.mjs",
+        "packages/*/package.json",
+        "apps/*/package.json",
+        "packages/*/src/**",
+        "apps/*/src/**",
+        "apps/*/.storybook/**",
+        "apps/*/*.config.ts"
+      ]
+    }
   }
 }
