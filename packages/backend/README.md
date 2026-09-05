@@ -12,9 +12,11 @@ the UI can explain itself, and the backend enforces the same rules and refuses â
 checked twice, on purpose.
 
 **Builders and worlds** (`testing/`): `TestOrder` / `TestShipment` create rows through the
-backend's own create path and return live handles. `provideFakeBackend`, `provideAdmin`,
+backend's own create path and return live handles. `provideBackend`, `provideAdmin`,
 `provideAgent`, `provideOrders([...])`, `provideShipments([...])` are the provider links every Ux
-test and page story starts from.
+test and page story starts from (`@humble/app-core/testing` re-exports them and adds
+`provideFakeBackend`). `seedDemo(backend)` and the demo data feed the api, the browser root, and the
+full-app story.
 
 - May import: `ux-core` (for `Clock`). Hono appears only under `routes/`.
 - Imported by: `app-core` (fakes, in-process HTTP), `feat-*`, apps.
