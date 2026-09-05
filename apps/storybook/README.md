@@ -7,7 +7,7 @@ story. Play tests run in Playwright's Chromium through `@storybook/addon-vitest`
 pnpm --filter @humble/storybook dev             # http://localhost:6006
 pnpm --filter @humble/storybook build           # storybook-static/
 pnpm --filter @humble/storybook test:storybook  # play tests, headless
-pnpm exec playwright install chromium           # once, before test:storybook
+pnpm --filter @humble/storybook exec playwright install chromium   # once, before test:storybook
 ```
 
 Story titles follow the layer: `design/…`, `core/…`, `app/…`, `orders/…`, `shipments/…`,

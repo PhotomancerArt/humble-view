@@ -189,7 +189,7 @@ pnpm validate                            # format check, lint, typecheck, tests,
 pnpm --filter @humble/storybook dev      # http://localhost:6006
 pnpm --filter @humble/api dev            # http://localhost:8787
 pnpm --filter @humble/dashboard dev      # http://localhost:5173, talks to the api
-pnpm --filter @humble/storybook test:storybook   # play tests, headless (pnpm exec playwright install chromium once)
+pnpm --filter @humble/storybook test:storybook   # play tests, headless (pnpm --filter @humble/storybook exec playwright install chromium once)
 ```
 
 The deployed dashboard needs no api: its composition root runs the backend routes in the browser.
