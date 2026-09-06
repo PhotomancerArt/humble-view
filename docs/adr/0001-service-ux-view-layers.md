@@ -95,7 +95,7 @@ context; a Ux takes `ctx` as an argument.
 
 ## References
 
-- [The Humble View](https://lab.photomancer.art/post/2026-09-humble-view/) (the post this repo
+- [The Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/) (the post this repo
   leads), [Providers](https://lab.photomancer.art/post/2026-08-04-providers/),
   [Fixture builders](https://lab.photomancer.art/post/2026-08-04-fixture-builders/),
   [ts-provide](https://github.com/PhotomancerArt/ts-provide).
