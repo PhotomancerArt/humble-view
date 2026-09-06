@@ -42,9 +42,9 @@ export function About() {
   return (
     <div className="space-y-4 text-sm">
       <p>
-        Dispatch is a demo of the <strong>humble UI stack</strong>: three layers per feature (Service,
-        Ux, View), where a feature&apos;s logic gets plain unit tests, its components get stories,
-        and both run on the same fake services.
+        Dispatch is a demo of the <strong>humble UI stack</strong>: three layers per feature
+        (Service, Ux, View), where a feature&apos;s logic gets plain unit tests, its components get
+        stories, and both run on the same fake services.
       </p>
       <p className="text-muted-foreground">
         Everything here is simulated: no persistence, no login. The role is a switch.
