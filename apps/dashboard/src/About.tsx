@@ -15,7 +15,7 @@ export const links = [
     id: "post",
     label: "The post",
     href: "https://lab.photomancer.art/post/2026-09-humble-ui-stack/",
-    description: "The Humble UI Stack: the architecture, explained through its tests.",
+    description: "A Humble UI Stack: the architecture, explained through its tests.",
   },
   {
     id: "repo",
