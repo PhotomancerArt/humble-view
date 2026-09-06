@@ -26,6 +26,7 @@ const meta = {
       </Button>
     ),
     children: <p className="text-sm text-muted-foreground">Page content goes here.</p>,
+    footer: <p className="text-xs text-muted-foreground">Footer links go here.</p>,
   },
 } satisfies Meta<typeof AppShell>;
 export default meta;

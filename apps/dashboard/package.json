@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
+    "./About": "./src/About.tsx",
     "./App": "./src/App.tsx",
     "./provideDispatchApp": "./src/provideDispatchApp.ts"
   },

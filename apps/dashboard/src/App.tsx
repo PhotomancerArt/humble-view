@@ -3,6 +3,7 @@ import { ShipmentsPage } from "@humble/feat-shipments";
 import { AppShell } from "@humble/ui-app";
 import { Button } from "@humble/ui-core";
 
+import { AboutButton, AboutLinks } from "./About";
 import type { DispatchCtx } from "./provideDispatchApp";
 import { RoleToggle } from "./RoleToggle";
 import { type Route, useHashRoute } from "./useHashRoute";
@@ -24,7 +25,13 @@ export function App({ ctx }: { ctx: DispatchCtx }) {
           </NavLink>
         </>
       }
-      roleSlot={<RoleToggle auth={ctx.auth} events={ctx.events} />}
+      roleSlot={
+        <>
+          <RoleToggle auth={ctx.auth} events={ctx.events} />
+          <AboutButton />
+        </>
+      }
+      footer={<AboutLinks />}
     >
       {route === "orders" ? (
         <OrdersPage ordersUx={ctx.ordersUx} />

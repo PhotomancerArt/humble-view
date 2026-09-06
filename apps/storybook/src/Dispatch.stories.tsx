@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { expect, waitFor } from "storybook/test";
+import { expect, screen, waitFor, within } from "storybook/test";
 
 import { Backend, backendRoutes } from "@humble/backend";
 import { seedDemo } from "@humble/backend/testing";
+import { links } from "@humble/dashboard/About";
 import { App } from "@humble/dashboard/App";
 import { provideDispatchApp } from "@humble/dashboard/provideDispatchApp";
 import { InlineProgress } from "@humble/ui-app";
@@ -54,5 +55,21 @@ export const TestDeliveringUpdatesOrder: Story = {
     await waitFor(() =>
       expect(canvas.getByTestId("orders-status-ord-1002")).toHaveTextContent("delivered"),
     );
+  },
+};
+
+export const TestAboutLinksToTheRest: Story = {
+  name: "Test: About links to the post, the repo, and Storybook",
+  play: async ({ canvas, userEvent }) => {
+    await userEvent.click(await canvas.findByTestId("about-open"));
+    const dialog = await screen.findByTestId("about-dialog");
+
+    for (const link of links) {
+      await expect(within(dialog).getByTestId(`about-link-${link.id}`)).toHaveAttribute(
+        "href",
+        link.href,
+      );
+    }
+    await expect(canvas.getByTestId("footer-link-post")).toHaveAttribute("href", links[0].href);
   },
 };
