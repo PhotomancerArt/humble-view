@@ -10,7 +10,7 @@ Gerard Meszaros's Humble Object.
 
 - **Live dashboard:** https://photomancerart.github.io/humble-ui-stack/
 - **Storybook:** https://photomancerart.github.io/humble-ui-stack/storybook/
-- **The posts:** [The Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/), which
+- **The posts:** [A Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/), which
   builds on [Providers](https://lab.photomancer.art/post/2026-08-04-providers/) and
   [Fixture builders](https://lab.photomancer.art/post/2026-08-04-fixture-builders/).
 - **For agents:** start at [AGENTS.md](./AGENTS.md). The formal decision record is
@@ -451,5 +451,5 @@ post. Nat Pryce, [Test Data Builders](http://www.natpryce.com/articles/000714.ht
 [shadcn/ui](https://ui.shadcn.com/). [Feature-Sliced Design](https://feature-sliced.design/). Nx,
 [Enforce module boundaries](https://nx.dev/features/enforce-module-boundaries).
 
-**This project.** [The Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/), the post, and
+**This project.** [A Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/), the post, and
 [ADR 0001](./docs/adr/0001-service-ux-view-layers.md), the formal record of the layering decision.
