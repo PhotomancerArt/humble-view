@@ -4,8 +4,9 @@ Dispatch is a small shipping dashboard: orders you can cancel or refund, shipmen
 a carrier and mark delivered. It exists to demonstrate the humble stack, an architecture for frontend
 applications drawn from years of building them and from watching agents build them. The humble view is the idea
 [the post](https://lab.photomancer.art/post/2026-09-humble-view/) leads with; this repo is the whole
-arrangement around it. The name is not mine: it is the heading Martin Fowler gave the idea in 2006,
-crediting Michael Feathers's Humble Dialog Box and Gerard Meszaros's Humble Object.
+arrangement around it, and it is named after it. The humble view's name is not mine: it is the
+heading Martin Fowler gave the idea in 2006, crediting Michael Feathers's Humble Dialog Box and
+Gerard Meszaros's Humble Object.
 
 - **Live dashboard:** https://photomancerart.github.io/humble-stack/
 - **Storybook:** https://photomancerart.github.io/humble-stack/storybook/
@@ -450,5 +451,6 @@ post. Nat Pryce, [Test Data Builders](http://www.natpryce.com/articles/000714.ht
 [shadcn/ui](https://ui.shadcn.com/). [Feature-Sliced Design](https://feature-sliced.design/). Nx,
 [Enforce module boundaries](https://nx.dev/features/enforce-module-boundaries).
 
-**This project.** [The Humble View](https://lab.photomancer.art/post/2026-09-humble-view/), and
+**This project.** [The Humble View](https://lab.photomancer.art/post/2026-09-humble-view/), the
+post the stack is named after, and
 [ADR 0001](./docs/adr/0001-service-ux-view-layers.md), the formal record of the layering decision.
