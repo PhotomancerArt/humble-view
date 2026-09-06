@@ -14,25 +14,25 @@ export const links = [
   {
     id: "post",
     label: "The post",
-    href: "https://lab.photomancer.art/post/2026-09-humble-view/",
-    description: "The Humble View: the architecture, explained through its tests.",
+    href: "https://lab.photomancer.art/post/2026-09-humble-ui-stack/",
+    description: "The Humble UI Stack: the architecture, explained through its tests.",
   },
   {
     id: "repo",
     label: "Source",
-    href: "https://github.com/PhotomancerArt/humble-stack",
+    href: "https://github.com/PhotomancerArt/humble-ui-stack",
     description: "The repo, its README, and AGENTS.md for coding agents.",
   },
   {
     id: "dashboard",
     label: "Dashboard",
-    href: "https://photomancerart.github.io/humble-stack/",
+    href: "https://photomancerart.github.io/humble-ui-stack/",
     description: "This app, running the real HTTP path in the browser with no server.",
   },
   {
     id: "storybook",
     label: "Storybook",
-    href: "https://photomancerart.github.io/humble-stack/storybook/",
+    href: "https://photomancerart.github.io/humble-ui-stack/storybook/",
     description: "Every component and page, with play tests.",
   },
 ] as const;
@@ -42,7 +42,7 @@ export function About() {
   return (
     <div className="space-y-4 text-sm">
       <p>
-        Dispatch is a demo of the <strong>humble stack</strong>: three layers per feature (Service,
+        Dispatch is a demo of the <strong>humble UI stack</strong>: three layers per feature (Service,
         Ux, View), where a feature&apos;s logic gets plain unit tests, its components get stories,
         and both run on the same fake services.
       </p>
@@ -95,7 +95,7 @@ export function AboutButton() {
 export function AboutLinks() {
   return (
     <p className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-      <span>Dispatch, a humble-stack demo.</span>
+      <span>Dispatch, a humble-ui-stack demo.</span>
       {links.map((link) => (
         <a
           key={link.id}

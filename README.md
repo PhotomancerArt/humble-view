@@ -1,16 +1,16 @@
-# Humble Stack: an applied frontend architecture
+# Humble UI Stack: an applied frontend architecture
 
 Dispatch is a small shipping dashboard: orders you can cancel or refund, shipments you can hand to
-a carrier and mark delivered. It exists to demonstrate the humble stack, an architecture for frontend
+a carrier and mark delivered. It exists to demonstrate the humble UI stack, an architecture for frontend
 applications drawn from years of building them and from watching agents build them. The humble view is the idea
-[the post](https://lab.photomancer.art/post/2026-09-humble-view/) leads with; this repo is the whole
-arrangement around it, and it is named after it. The humble view's name is not mine: it is the
+[the post](https://lab.photomancer.art/post/2026-09-humble-ui-stack/) is built around; this repo is
+the whole arrangement, and the UI is the humble part. The humble view's name is not mine: it is the
 heading Martin Fowler gave the idea in 2006, crediting Michael Feathers's Humble Dialog Box and
 Gerard Meszaros's Humble Object.
 
-- **Live dashboard:** https://photomancerart.github.io/humble-stack/
-- **Storybook:** https://photomancerart.github.io/humble-stack/storybook/
-- **The posts:** [The Humble View](https://lab.photomancer.art/post/2026-09-humble-view/), which
+- **Live dashboard:** https://photomancerart.github.io/humble-ui-stack/
+- **Storybook:** https://photomancerart.github.io/humble-ui-stack/storybook/
+- **The posts:** [The Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/), which
   builds on [Providers](https://lab.photomancer.art/post/2026-08-04-providers/) and
   [Fixture builders](https://lab.photomancer.art/post/2026-08-04-fixture-builders/).
 - **For agents:** start at [AGENTS.md](./AGENTS.md). The formal decision record is
@@ -451,6 +451,5 @@ post. Nat Pryce, [Test Data Builders](http://www.natpryce.com/articles/000714.ht
 [shadcn/ui](https://ui.shadcn.com/). [Feature-Sliced Design](https://feature-sliced.design/). Nx,
 [Enforce module boundaries](https://nx.dev/features/enforce-module-boundaries).
 
-**This project.** [The Humble View](https://lab.photomancer.art/post/2026-09-humble-view/), the
-post the stack is named after, and
+**This project.** [The Humble UI Stack](https://lab.photomancer.art/post/2026-09-humble-ui-stack/), the post, and
 [ADR 0001](./docs/adr/0001-service-ux-view-layers.md), the formal record of the layering decision.

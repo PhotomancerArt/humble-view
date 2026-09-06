@@ -5,8 +5,8 @@ import { create } from "storybook/theming";
 addons.setConfig({
   theme: create({
     base: "light",
-    brandTitle: "Dispatch · humble-stack",
-    brandUrl: "https://github.com/PhotomancerArt/humble-stack",
+    brandTitle: "Dispatch · humble-ui-stack",
+    brandUrl: "https://github.com/PhotomancerArt/humble-ui-stack",
     brandTarget: "_blank",
   }),
 });
