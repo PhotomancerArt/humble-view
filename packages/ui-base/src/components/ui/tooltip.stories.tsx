@@ -17,7 +17,7 @@ function Example() {
 }
 
 const meta = {
-  title: "core/Tooltip",
+  title: "base/Tooltip",
   component: Example,
 } satisfies Meta<typeof Example>;
 export default meta;

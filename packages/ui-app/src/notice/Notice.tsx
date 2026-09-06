@@ -1,7 +1,7 @@
 import { InfoIcon, OctagonAlertIcon, XIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
-import { Button, cn } from "@humble/ui-core";
+import { Button, cn } from "@humble/ui-base";
 
 /** A banner the Ux put in State: an error or a piece of information, dismissable through an op. */
 export function Notice(props: {

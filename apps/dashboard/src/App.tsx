@@ -1,7 +1,7 @@
 import { OrdersPage } from "@humble/feat-orders";
 import { ShipmentsPage } from "@humble/feat-shipments";
 import { AppShell } from "@humble/ui-app";
-import { Button } from "@humble/ui-core";
+import { Button } from "@humble/ui-base";
 
 import { AboutButton, AboutLinks } from "./About";
 import type { DispatchCtx } from "./provideDispatchApp";

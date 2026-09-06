@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { Badge, cn } from "@humble/ui-core";
+import { Badge, cn } from "@humble/ui-base";
 
 export type StatusTone = "neutral" | "info" | "success" | "warning" | "danger";
 

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { cn, Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@humble/ui-core";
+import { cn, Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@humble/ui-base";
 
 export type Column<Row> = {
   key: string;

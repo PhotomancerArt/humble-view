@@ -1,6 +1,6 @@
 # @humble/ui-app
 
-The app layer: Dispatch's common visual language, built from `ui-core` primitives. This is the only
+The app layer: Dispatch's common visual language, built from `ui-base` primitives. This is the only
 UI package that knows what an `Affordance` is, so the presentation decision for each affordance
 state lives here, once, in `ActionButton`:
 
@@ -18,5 +18,5 @@ Components: `AppShell`, `ListLayout`, `DetailLayout`, `DataTable`, `RecordCard`,
 `ActionButton`, `ActionBar`, `ConfirmDialog`, `InlineProgress`, `Notice`. Every one has a story under
 `app/…`; `ActionButton` and `ConfirmDialog` carry `Test:` play stories.
 
-- May import: `ui-core`, `ux-core`.
+- May import: `ui-base`, `ux-core`.
 - Imported by: `feat-*`, apps.

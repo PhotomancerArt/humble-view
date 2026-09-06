@@ -7,7 +7,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@humble/ui-core";
+} from "@humble/ui-base";
 
 /** Where the rest of the project lives. One list, used by the About dialog, the footer, and Storybook. */
 export const links = [

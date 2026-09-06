@@ -6,7 +6,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "@humble/ui-core";
+} from "@humble/ui-base";
 
 /** The confirmation an action asked for. Presentation only: confirming dispatches the op. */
 export function ConfirmDialog(props: {

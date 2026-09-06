@@ -17,7 +17,7 @@
     "@humble/feat-orders": "workspace:*",
     "@humble/feat-shipments": "workspace:*",
     "@humble/ui-app": "workspace:*",
-    "@humble/ui-core": "workspace:*",
+    "@humble/ui-base": "workspace:*",
     "@humble/ui-design": "workspace:*",
     "@humble/ux-core": "workspace:*",
     "react": "catalog:",

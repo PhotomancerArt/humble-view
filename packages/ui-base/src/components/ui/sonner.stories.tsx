@@ -19,7 +19,7 @@ function Example() {
 }
 
 const meta = {
-  title: "core/Toaster",
+  title: "base/Toaster",
   component: Example,
 } satisfies Meta<typeof Example>;
 export default meta;

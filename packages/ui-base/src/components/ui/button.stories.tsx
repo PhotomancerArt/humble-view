@@ -4,7 +4,7 @@ import { PlusIcon } from "lucide-react";
 import { Button } from "./button";
 
 const meta = {
-  title: "core/Button",
+  title: "base/Button",
   component: Button,
   args: { children: "Button" },
 } satisfies Meta<typeof Button>;

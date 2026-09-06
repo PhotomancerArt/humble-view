@@ -24,7 +24,7 @@ function Example() {
 }
 
 const meta = {
-  title: "core/ResponsivePreview",
+  title: "base/ResponsivePreview",
   component: Example,
   parameters: { layout: "padded" },
 } satisfies Meta<typeof Example>;

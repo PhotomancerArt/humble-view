@@ -1,7 +1,7 @@
 import { LockIcon } from "lucide-react";
 import { useState } from "react";
 
-import { Button, Tooltip, TooltipContent, TooltipTrigger } from "@humble/ui-core";
+import { Button, Tooltip, TooltipContent, TooltipTrigger } from "@humble/ui-base";
 import type { Action } from "@humble/ux-core";
 
 import { InlineProgress } from "../progress/InlineProgress";

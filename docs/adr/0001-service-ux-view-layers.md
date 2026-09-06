@@ -28,18 +28,18 @@ record rather than an accident to explain later.
   nothing. A `Page` is the one place React meets a Ux (`useUx`).
 
 **Four UI layers as packages**, so the boundaries are the dependency graph, not a convention:
-`ui-design` (tokens), `ui-core` (primitives, no app knowledge), `ui-app` (the app's common language,
+`ui-design` (tokens), `ui-base` (primitives, no app knowledge), `ui-app` (the app's common language,
 the only UI package that knows `Affordance`), and the page layer inside each feature's `view/`.
 
 **The dependency rule.** Arrows mean "may import".
 
 ```text
-ui-design ← ui-core ← ui-app ← feat-* → app-core → ux-core
+ui-design ← ui-base ← ui-app ← feat-* → app-core → ux-core
                        ↑ ux-core         ↑ backend (fakes, routes, worlds)
 apps → feat-*, ui-app, app-core, backend, ux-core   (storybook → dashboard, to render it)
 ```
 
-Features never import each other or apps. `ui-core` never imports `ux-core`. `scripts/check-deps.mjs`
+Features never import each other or apps. `ui-base` never imports `ux-core`. `scripts/check-deps.mjs`
 fails CI on a violation.
 
 **Two proofs, one set of fakes.** Ux tests are plain vitest tests with no DOM whose second argument

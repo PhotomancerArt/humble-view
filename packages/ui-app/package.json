@@ -11,7 +11,7 @@
     "typecheck": "tsc --noEmit -p ."
   },
   "dependencies": {
-    "@humble/ui-core": "workspace:*",
+    "@humble/ui-base": "workspace:*",
     "@humble/ux-core": "workspace:*",
     "lucide-react": "catalog:"
   },
