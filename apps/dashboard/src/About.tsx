@@ -20,19 +20,19 @@ export const links = [
   {
     id: "repo",
     label: "Source",
-    href: "https://github.com/PhotomancerArt/humble-view",
+    href: "https://github.com/PhotomancerArt/humble-stack",
     description: "The repo, its README, and AGENTS.md for coding agents.",
   },
   {
     id: "dashboard",
     label: "Dashboard",
-    href: "https://photomancerart.github.io/humble-view/",
+    href: "https://photomancerart.github.io/humble-stack/",
     description: "This app, running the real HTTP path in the browser with no server.",
   },
   {
     id: "storybook",
     label: "Storybook",
-    href: "https://photomancerart.github.io/humble-view/storybook/",
+    href: "https://photomancerart.github.io/humble-stack/storybook/",
     description: "Every component and page, with play tests.",
   },
 ] as const;
@@ -42,9 +42,9 @@ export function About() {
   return (
     <div className="space-y-4 text-sm">
       <p>
-        Dispatch is a demo of the <strong>humble-view</strong> architecture: three layers per
-        feature (Service, Ux, View), where a feature&apos;s logic gets plain unit tests, its
-        components get stories, and both run on the same fake services.
+        Dispatch is a demo of the <strong>humble stack</strong>: three layers per feature (Service,
+        Ux, View), where a feature&apos;s logic gets plain unit tests, its components get stories,
+        and both run on the same fake services.
       </p>
       <p className="text-muted-foreground">
         Everything here is simulated: no persistence, no login. The role is a switch.
@@ -95,7 +95,7 @@ export function AboutButton() {
 export function AboutLinks() {
   return (
     <p className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-      <span>Dispatch, a humble-view demo.</span>
+      <span>Dispatch, a humble-stack demo.</span>
       {links.map((link) => (
         <a
           key={link.id}

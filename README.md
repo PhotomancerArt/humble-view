@@ -1,14 +1,14 @@
-# Dispatch: an applied frontend architecture
+# Humble Stack: an applied frontend architecture
 
 Dispatch is a small shipping dashboard: orders you can cancel or refund, shipments you can hand to
-a carrier and mark delivered. It exists to demonstrate an architecture for frontend applications,
-drawn from years of building them and from watching agents build them. The humble view is the idea
+a carrier and mark delivered. It exists to demonstrate the humble stack, an architecture for frontend
+applications drawn from years of building them and from watching agents build them. The humble view is the idea
 [the post](https://lab.photomancer.art/post/2026-09-humble-view/) leads with; this repo is the whole
 arrangement around it. The name is not mine: it is the heading Martin Fowler gave the idea in 2006,
 crediting Michael Feathers's Humble Dialog Box and Gerard Meszaros's Humble Object.
 
-- **Live dashboard:** https://photomancerart.github.io/humble-view/
-- **Storybook:** https://photomancerart.github.io/humble-view/storybook/
+- **Live dashboard:** https://photomancerart.github.io/humble-stack/
+- **Storybook:** https://photomancerart.github.io/humble-stack/storybook/
 - **The posts:** [The Humble View](https://lab.photomancer.art/post/2026-09-humble-view/), which
   builds on [Providers](https://lab.photomancer.art/post/2026-08-04-providers/) and
   [Fixture builders](https://lab.photomancer.art/post/2026-08-04-fixture-builders/).
