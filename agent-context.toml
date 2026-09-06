@@ -4,6 +4,6 @@
 # Archive:  <planning_root>/<repo_slug>/_archive/
 
 [agent]
-repo_slug = "humble-view"
+repo_slug = "humble-stack"
 planning_root = "~/.photomancer/planning"
 planning_root_env = "PHOTOMANCER_PLANNING_ROOT"

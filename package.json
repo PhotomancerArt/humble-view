@@ -1,5 +1,5 @@
 {
-  "name": "humble-view",
+  "name": "humble-stack",
   "private": true,
   "type": "module",
   "description": "Dispatch: a three-layer frontend architecture demo (Service / Ux / View) with Ux tests and stories on shared fakes",

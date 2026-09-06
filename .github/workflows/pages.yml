@@ -26,7 +26,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # The dashboard at /, from the browser composition root; Storybook at /storybook/.
-      - run: VITE_BASE=/humble-view/ pnpm --filter @humble/dashboard build
+      - run: VITE_BASE=/humble-stack/ pnpm --filter @humble/dashboard build
       - run: pnpm --filter @humble/storybook build
       - run: |
           mkdir -p site/storybook
