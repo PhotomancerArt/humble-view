@@ -1,6 +1,6 @@
-# @humble/ui-core
+# @humble/ui-base
 
-Core components: shadcn/ui primitives (new-york style, Radix) copied in with `shadcn add`, so the
+Base components: shadcn/ui primitives (new-york style, Radix) copied in with `shadcn add`, so the
 repo owns them. Button, Badge, Dialog, DropdownMenu, Table, Tooltip, Toaster (sonner), and `cn`.
 Plus `ResponsivePreview`, a story wrapper that renders its children at several widths, light and
 dark, side by side; the Storybook toolbar's "Preview" toggle wraps any story in it.

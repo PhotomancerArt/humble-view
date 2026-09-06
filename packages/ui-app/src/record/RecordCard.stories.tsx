@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { Button } from "@humble/ui-core";
+import { Button } from "@humble/ui-base";
 
 import { StatusBadge } from "../status/StatusBadge";
 import { RecordCard } from "./RecordCard";

@@ -1,6 +1,6 @@
 // Enforces the dependency rule from README.md / AGENTS.md:
 //
-//   ui-design ← ui-core ← ui-app ← feat-* → app-core → ux-core
+//   ui-design ← ui-base ← ui-app ← feat-* → app-core → ux-core
 //                          ↑ ux-core         ↑ backend
 //   apps → feat-*, ui-app, app-core, backend, ux-core   (storybook → dashboard, to render it)
 //
@@ -14,21 +14,21 @@ const root = new URL("..", import.meta.url).pathname;
 const packages = [
   "ux-core",
   "ui-design",
-  "ui-core",
+  "ui-base",
   "ui-app",
   "backend",
   "app-core",
   "feat-orders",
   "feat-shipments",
 ];
-const featureDeps = ["ui-app", "ui-core", "app-core", "backend", "ux-core"];
+const featureDeps = ["ui-app", "ui-base", "app-core", "backend", "ux-core"];
 
 /** name → what it may import. Apps may import every package; storybook may also render the dashboard. */
 const allowed = {
   "ux-core": [],
   "ui-design": [],
-  "ui-core": ["ui-design"],
-  "ui-app": ["ui-core", "ux-core"],
+  "ui-base": ["ui-design"],
+  "ui-app": ["ui-base", "ux-core"],
   backend: ["ux-core"],
   "app-core": ["ux-core", "backend"],
   "feat-orders": featureDeps,

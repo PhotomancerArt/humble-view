@@ -213,9 +213,9 @@ importers:
       '@humble/ui-app':
         specifier: workspace:*
         version: link:../../packages/ui-app
-      '@humble/ui-core':
+      '@humble/ui-base':
         specifier: workspace:*
-        version: link:../../packages/ui-core
+        version: link:../../packages/ui-base
       '@humble/ui-design':
         specifier: workspace:*
         version: link:../../packages/ui-design
@@ -286,9 +286,9 @@ importers:
       '@humble/ui-app':
         specifier: workspace:*
         version: link:../../packages/ui-app
-      '@humble/ui-core':
+      '@humble/ui-base':
         specifier: workspace:*
-        version: link:../../packages/ui-core
+        version: link:../../packages/ui-base
       '@humble/ui-design':
         specifier: workspace:*
         version: link:../../packages/ui-design
@@ -397,9 +397,9 @@ importers:
       '@humble/ui-app':
         specifier: workspace:*
         version: link:../ui-app
-      '@humble/ui-core':
+      '@humble/ui-base':
         specifier: workspace:*
-        version: link:../ui-core
+        version: link:../ui-base
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core
@@ -440,9 +440,9 @@ importers:
       '@humble/ui-app':
         specifier: workspace:*
         version: link:../ui-app
-      '@humble/ui-core':
+      '@humble/ui-base':
         specifier: workspace:*
-        version: link:../ui-core
+        version: link:../ui-base
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core
@@ -474,9 +474,9 @@ importers:
 
   packages/ui-app:
     dependencies:
-      '@humble/ui-core':
+      '@humble/ui-base':
         specifier: workspace:*
-        version: link:../ui-core
+        version: link:../ui-base
       '@humble/ux-core':
         specifier: workspace:*
         version: link:../ux-core
@@ -506,7 +506,7 @@ importers:
         specifier: 'catalog:'
         version: 5.9.3
 
-  packages/ui-core:
+  packages/ui-base:
     dependencies:
       '@humble/ui-design':
         specifier: workspace:*

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { fn } from "storybook/test";
 
-import { ResponsivePreview } from "@humble/ui-core";
+import { ResponsivePreview } from "@humble/ui-base";
 
 import { sampleStates } from "../testing/sampleStates";
 import { ShipmentsView } from "./ShipmentsView";

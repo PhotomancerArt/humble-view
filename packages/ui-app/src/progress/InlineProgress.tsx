@@ -1,6 +1,6 @@
 import { Loader2Icon } from "lucide-react";
 
-import { cn } from "@humble/ui-core";
+import { cn } from "@humble/ui-base";
 
 /** A spinner with a label, for progress that belongs inline: inside a button or a table cell. */
 export function InlineProgress(props: { label: string; className?: string }) {

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { TooltipProvider } from "@humble/ui-core";
+import { TooltipProvider } from "@humble/ui-base";
 
 /** The app frame: a header with the title, a nav slot, and a role slot; the page; an optional footer. */
 export function AppShell(props: {

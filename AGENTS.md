@@ -8,7 +8,7 @@ Doctrine and checklist for agents working in this repository. Read this, then
 | Kind of code                               | Package / path                        | Filename                                                               |
 | ------------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------- |
 | Design tokens, theme, CSS variables        | `packages/ui-design/src/theme.css`    |                                                                        |
-| Primitive component (no app knowledge)     | `packages/ui-core/src/components/ui/` | `<name>.tsx` (shadcn layout), story beside it                          |
+| Primitive component (no app knowledge)     | `packages/ui-base/src/components/ui/` | `<name>.tsx` (shadcn layout), story beside it                          |
 | App-level component, layout, affordance UI | `packages/ui-app/src/<area>/`         | `<Name>.tsx`, `<Name>.stories.tsx`                                     |
 | Domain model, store, rules, routes         | `packages/backend/src/`               | `domain/*.ts`, `rules/*.ts`, `routes/*.ts`                             |
 | Builders, world providers, demo seed       | `packages/backend/src/testing/`       | `Test<Name>.ts`, `worlds.ts`, `demo.ts`                                |
@@ -28,13 +28,13 @@ default home, not a prohibition.
 Arrows mean "may import".
 
 ```text
-ui-design ← ui-core ← ui-app ← feat-* → app-core → ux-core
+ui-design ← ui-base ← ui-app ← feat-* → app-core → ux-core
                        ↑ ux-core         ↑ backend (fakes, routes, worlds)
 apps → feat-*, ui-app, app-core, backend, ux-core   (storybook → dashboard, to render it)
 ```
 
 - Features never import each other or apps. They talk through `DispatchEvent` on the bus.
-- `ui-core` never imports `ux-core`: a button does not know what an affordance is.
+- `ui-base` never imports `ux-core`: a button does not know what an affordance is.
 - Test-only code (`vitest`, contract suites) is never exported from a package's main or `testing`
   entry; `test`, `describe`, `expect` come from `@humble/ux-core/test`.
 - `pnpm check:deps` enforces the edges and the declared-dependency rule; `pnpm validate` runs it.
@@ -60,7 +60,7 @@ apps → feat-*, ui-app, app-core, backend, ux-core   (storybook → dashboard, 
 
 Conventions: no classes, factory functions returning plain objects; the primary export is the first
 declaration after imports; filenames match the primary export; tests and stories are co-located;
-story titles follow the layer (`design/`, `core/`, `app/`, `orders/`, `shipments/`, `dispatch/`);
+story titles follow the layer (`design/`, `base/`, `app/`, `orders/`, `shipments/`, `dispatch/`);
 play stories are named `Test: …`; `data-testid` on every element a play test touches, named
 `<feature>-<thing>-<id>`; conventional commits (`feat(orders): …`).
 

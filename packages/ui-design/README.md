@@ -5,5 +5,5 @@ light (`:root`) and dark (`.dark`), with three Dispatch additions — `success`,
 status colours. `tokens.ts` mirrors the token names for stories and docs. No components live here.
 
 - May import: nothing in the workspace.
-- Imported by: `ui-core` (and any app that needs the stylesheet: `@humble/ui-design/theme.css`).
+- Imported by: `ui-base` (and any app that needs the stylesheet: `@humble/ui-design/theme.css`).
 - Stories: `design/Swatches` (every colour token in both themes), `design/Typography`.

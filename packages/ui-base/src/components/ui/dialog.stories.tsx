@@ -40,7 +40,7 @@ function Example() {
 }
 
 const meta = {
-  title: "core/Dialog",
+  title: "base/Dialog",
   component: Example,
 } satisfies Meta<typeof Example>;
 export default meta;

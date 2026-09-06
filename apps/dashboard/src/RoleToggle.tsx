@@ -11,7 +11,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@humble/ui-core";
+} from "@humble/ui-base";
 import type { EventBus } from "@humble/ux-core";
 
 /** Dispatch has no login: the role is a switch. Changing it tells every Ux through the bus. */

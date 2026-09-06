@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 import { expect, fn, screen, waitFor } from "storybook/test";
 
-import { Button } from "@humble/ui-core";
+import { Button } from "@humble/ui-base";
 
 import { ConfirmDialog } from "./ConfirmDialog";
 

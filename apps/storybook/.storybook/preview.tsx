@@ -1,7 +1,7 @@
 import { withThemeByClassName } from "@storybook/addon-themes";
 import type { Preview } from "@storybook/react-vite";
 
-import { ResponsivePreview, TooltipProvider } from "@humble/ui-core";
+import { ResponsivePreview, TooltipProvider } from "@humble/ui-base";
 
 import "@humble/ui-design/theme.css";
 

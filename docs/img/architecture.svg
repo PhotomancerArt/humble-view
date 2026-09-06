@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="690" viewBox="0 0 1300 690" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect width="1300" height="690" rx="14" fill="#1c1a18"/>
+<rect x="40" y="70" width="130" height="270" rx="22" fill="none" stroke="#d9d9d9" stroke-width="2.5"/>
+<text x="105" y="185" text-anchor="middle" font-size="24" fill="#ececec">Backend</text>
+<text x="105" y="213" text-anchor="middle" font-size="24" fill="#ececec">module</text>
+<text x="105" y="239" text-anchor="middle" font-size="14" fill="#9a9a9a">rules, in TS</text>
+<rect x="220" y="70" width="270" height="120" rx="22" fill="none" stroke="#d9d9d9" stroke-width="2.5"/>
+<text x="355" y="124" text-anchor="middle" font-size="24" fill="#ececec">Http service</text>
+<text x="355" y="150" text-anchor="middle" font-size="14" fill="#9a9a9a">over fetch</text>
+<rect x="220" y="220" width="270" height="120" rx="22" fill="none" stroke="#d9d9d9" stroke-width="2.5"/>
+<text x="355" y="274" text-anchor="middle" font-size="24" fill="#ececec">Fake service</text>
+<text x="355" y="300" text-anchor="middle" font-size="14" fill="#9a9a9a">calls the module</text>
+<text x="195" y="125" text-anchor="middle" font-size="12" fill="#9a9a9a">HTTP</text>
+<line x1="170" y1="130" x2="220" y2="130" stroke="#9a9a9a" stroke-width="1.5"/>
+<text x="195" y="275" text-anchor="middle" font-size="12" fill="#9a9a9a">direct</text>
+<line x1="170" y1="280" x2="220" y2="280" stroke="#9a9a9a" stroke-width="1.5"/>
+<rect x="530" y="70" width="120" height="270" rx="22" fill="none" stroke="#d9d9d9" stroke-width="2.5"/>
+<text x="590" y="185" text-anchor="middle" font-size="24" fill="#ececec">Service</text>
+<text x="590" y="213" text-anchor="middle" font-size="24" fill="#ececec">port</text>
+<text x="590" y="239" text-anchor="middle" font-size="14" fill="#9a9a9a">an interface</text>
+<rect x="690" y="70" width="240" height="270" rx="22" fill="none" stroke="#d9d9d9" stroke-width="2.5"/>
+<text x="810" y="199" text-anchor="middle" font-size="24" fill="#ececec">Ux</text>
+<text x="810" y="225" text-anchor="middle" font-size="14" fill="#9a9a9a">a function over ctx</text>
+<text x="985" y="190" text-anchor="middle" font-size="15" fill="#ececec">State ▸</text>
+<text x="985" y="232" text-anchor="middle" font-size="15" fill="#ececec">◂ Op</text>
+<rect x="1040" y="70" width="230" height="270" rx="22" fill="none" stroke="#d9d9d9" stroke-width="2.5"/>
+<text x="1155" y="199" text-anchor="middle" font-size="24" fill="#ececec">View</text>
+<text x="1155" y="225" text-anchor="middle" font-size="14" fill="#9a9a9a">{ state, dispatch }</text>
+<rect x="220" y="390" width="270" height="110" rx="22" fill="none" stroke="#3cb35a" stroke-width="2.5"/>
+<text x="355" y="439" text-anchor="middle" font-size="24" fill="#3cb35a">Service tests</text>
+<text x="355" y="465" text-anchor="middle" font-size="14" fill="#9a9a9a">one contract suite · both impls</text>
+<rect x="690" y="390" width="240" height="110" rx="22" fill="none" stroke="#3cb35a" stroke-width="2.5"/>
+<text x="810" y="439" text-anchor="middle" font-size="24" fill="#3cb35a">Ux tests</text>
+<text x="810" y="465" text-anchor="middle" font-size="14" fill="#9a9a9a">vitest · no DOM · no mocks</text>
+<rect x="1040" y="390" width="230" height="110" rx="22" fill="none" stroke="#3cb35a" stroke-width="2.5"/>
+<text x="1155" y="439" text-anchor="middle" font-size="24" fill="#3cb35a">Stories</text>
+<text x="1155" y="465" text-anchor="middle" font-size="14" fill="#9a9a9a">component + page · play tests</text>
+<rect x="220" y="530" width="1050" height="110" rx="22" fill="none" stroke="#3cb35a" stroke-width="2.5"/>
+<text x="745" y="579" text-anchor="middle" font-size="24" fill="#3cb35a">World</text>
+<text x="745" y="605" text-anchor="middle" font-size="14" fill="#9a9a9a">Providers(clock, backend, orders, fakeService, ux) · one chain builds all of this, for a test and a story alike</text>
+</svg>

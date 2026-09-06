@@ -37,7 +37,7 @@ function Example() {
 }
 
 const meta = {
-  title: "core/Table",
+  title: "base/Table",
   component: Example,
 } satisfies Meta<typeof Example>;
 export default meta;
