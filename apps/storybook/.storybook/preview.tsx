@@ -42,6 +42,12 @@ const preview: Preview = {
       ),
   ],
   parameters: {
+    // About first, then the whole app, then the features, then the UI layers.
+    options: {
+      storySort: {
+        order: ["dispatch", ["About", "Dispatch"], "orders", "shipments", "app", "core", "design"],
+      },
+    },
     controls: { matchers: { color: /(background|color)$/i, date: /date$/i } },
     // "todo": show a11y findings in the test UI without failing CI.
     a11y: { test: "todo" },

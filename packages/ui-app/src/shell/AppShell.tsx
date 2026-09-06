@@ -2,11 +2,12 @@ import type { ReactNode } from "react";
 
 import { TooltipProvider } from "@humble/ui-core";
 
-/** The app frame: a header with the title, a nav slot, and a role slot; then the page. */
+/** The app frame: a header with the title, a nav slot, and a role slot; the page; an optional footer. */
 export function AppShell(props: {
   title: string;
   nav?: ReactNode;
   roleSlot?: ReactNode;
+  footer?: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -20,6 +21,9 @@ export function AppShell(props: {
           </div>
         </header>
         <main className="mx-auto max-w-5xl px-6 py-8">{props.children}</main>
+        {props.footer && (
+          <footer className="mx-auto max-w-5xl border-t px-6 py-6">{props.footer}</footer>
+        )}
       </div>
     </TooltipProvider>
   );
